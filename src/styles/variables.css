@@ -1,0 +1,123 @@
+#user {
+  color: white;
+}
+
+.input-container > label {
+  color: white;
+}
+
+.items-center {
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar {
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 999;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    border: 2px solid black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    background: linear-gradient(
+        230deg,
+        rgb(0, 255, 0),
+        rgb(45, 196, 105)
+    )
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.anchors {
+  gap: 5px;
+  padding: 15px;
+  flex-direction: row;
+}
+
+#com-container {
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.com {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+.fa {
+   border: 1px solid black;
+}
+
+.prompt {
+  flex-direction: row;
+  border-radius: 10px;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.status-block {
+  align-items: center;
+  text-align: center;
+  border-right: 2px solid black;
+  gap: 2px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+
+
+.hide-prompt button {
+  height: 100%;
+  background-color: rgb(255, 80, 80);
+  border-radius: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.hide-prompt button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+@media (max-width: 425px) {
+  #com-container {
+    padding: 10px;
+  }
+
+  .com {
+    font-size: 20px;
+  }
+
+  .status-block {
+    font-size: 12px;
+  }
+}

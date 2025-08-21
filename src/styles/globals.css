@@ -1,0 +1,70 @@
+:root {
+  --primary-green: rgb(0, 255, 0);
+  --secondary-green: rgb(45, 196, 105);
+  --secondary-color: lch(63.22% 0.01 296.81);
+  --shadow: black
+  --gradient: linear-gradient(
+    120deg,
+    var(--seconadary-color),
+    rgba(99, 98, 98, 0.842)
+  )
+}
+
+h2 {
+  text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px  2px 0 black,
+    2px  2px 0 black;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+a {
+    color: white;
+    background-color: rgb(120, 255, 120);
+    border-radius: 10px;
+    padding: 5px;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+* {
+  transition: 0.5s ease-in-out;
+}
+
+input {
+  border-radius: 10px;
+  height: 1vh;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid black;
+  outline: none;
+}
+
+label {
+  font-weight: bold;
+  font-size: larger;
+  text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
