@@ -1,0 +1,34 @@
+#profile {
+  height: calc(100vh - 6vh);
+  padding-top: 6vh;
+  overflow: hidden;
+}
+
+#profile main {
+  flex: 1;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  overflow-y: auto;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgb(200, 200, 200),
+    rgb(180, 180, 180)
+  );
+}
+
+@media (min-width: 425px) {
+  #profile {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 425px) {
+  #profile {
+    height: 100%;
+  }
+}

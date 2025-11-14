@@ -10,13 +10,12 @@ export default function Prompt({ text, show = false, error, onClose }) {
   const icon = error ? <ErrorBadge /> : <SuccessBadge />;
   const backgroundColor = error ? 'rgb(255, 0, 0)' : 'rgb(0, 255, 0)';
 
-  if (show) setTimeout(() => onClose(), 10000);
-
   return (
     <AnimatePresence>
       {show && (
         <motion.div
           className="prompt"
+          style={{ zIndex: 999 }}
           initial={{ opacity: 0, x: '120%' }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: '120%' }}

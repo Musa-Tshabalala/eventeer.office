@@ -1,15 +1,15 @@
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Status.css';
 
 export default function SuccessBadge() {
   return (
-    <div className="flex items-center space-x-2 badge">
+    <div className="flex items-center space-x-2 badge success-badge">
       <FontAwesomeIcon
-        icon={faCircleCheck}
+        color="white"
+        icon={faCheck}
         className="text-green-500 text-2xl"
       />
-      <span className="text-green-600 font-medium">Success</span>
     </div>
   );
 }

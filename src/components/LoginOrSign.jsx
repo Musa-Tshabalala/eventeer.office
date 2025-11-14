@@ -15,11 +15,11 @@ export default function LoginOrSign() {
   return (
     <div id="login-sign">
       <div className="anchors">
-        <a href="/login">
+        <a href="/get_login">
           <FontAwesomeIcon icon={faUser} />
           Login
         </a>
-        <a href="/sign_up">
+        <a href="/Sign_Up">
           <FontAwesomeIcon icon={faPen} />
           Sign Up
         </a>

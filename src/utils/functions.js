@@ -4,7 +4,7 @@ const get = (id) => document.getElementById(`${id}`);
 const query = (query) => document.querySelector(`.${query}`);
 const queryAll = (query) => document.querySelectorAll(`.${query}`);
 
-const fetchData = async (route, method, body) => {
+const fetchData = async (route, method, body, opts = {}) => {
   const baseURI = 'http://localhost:3000';
   try {
     switch (method) {
@@ -18,7 +18,8 @@ const fetchData = async (route, method, body) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(body),
+          body: JSON.stringify({ ...body }),
+          ...opts,
         });
         return await response.json();
       }
@@ -28,4 +29,17 @@ const fetchData = async (route, method, body) => {
   }
 };
 
-export { get, query, queryAll, fetchData };
+const formatName = (name, direction = 1) => {
+  const capitalise = (word) => {
+    const firstChar = word[0];
+    return firstChar.toUpperCase() + word.slice(1);
+  };
+  return direction === 1
+    ? name.replace(/\s+/g, '_').toLowerCase()
+    : name
+        ?.split('_')
+        .map((part) => capitalise(part))
+        .join(' ');
+};
+
+export { get, query, queryAll, fetchData, formatName };

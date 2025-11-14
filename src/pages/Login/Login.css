@@ -1,0 +1,186 @@
+#login {
+  width: 100vw;
+  height: 94vh;
+  padding-top: 6vh;
+  position: relative;
+  flex-direction: row;
+  left: 0;
+}
+
+.container-right {
+  position: relative;
+  width: 80%;
+}
+
+.container-right img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+}
+
+.no-account-container {
+  width: 100%;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+}
+
+.no-account {
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.sign-up {
+  color: rgb(190, 255, 190);
+  background: none;
+  opacity: 30%;
+  font-style: italic;
+}
+
+.sign-up:hover {
+  opacity: 100%;
+  color: rgb(190, 255, 190);
+}
+
+
+.logins {
+  gap: 20px;
+  width: 100%;
+}
+
+.logins > button {
+  align-self: flex-start;
+  transform: translateX(30px);
+  background-color: rgb(190, 255, 190);
+  text-shadow: none;
+}
+
+.logins .or {
+  width: 85%;
+}
+
+#login-container {
+  width: 20%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.inputs {
+  width: 100%;
+  gap: 15px;
+}
+
+.inputs .input-container {
+  width: 80%;
+}
+
+.input .input-container > label {
+  align-self: flex-start;
+  transform: translateX(10px);
+}
+
+.inputs .input-container > input {
+  width: 90%;
+}
+
+.no-picture-outer {
+  width: 4vw;
+  height: 4vw;
+  background-color: purple;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profiles {
+  width: 100%;
+  padding: 15px 10px 15px 10px;
+  gap: 15px;
+}
+
+.non-profiles {
+  width: 100%;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.head {
+  color: rgb(190, 255, 190);
+  transform: translateX(-30px);
+  font-style: italic;
+  text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#all-profiles {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;  
+}
+
+.profile {
+  opacity: 80%;
+}
+
+.profile:hover,
+.profile:focus {
+  opacity: 100%;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 4vw;
+  height: 4vw;
+}
+
+@media (max-width: 425px) {
+  #login-container {
+    width: 100%;
+    background: transparent;
+  }
+
+  #login {
+    padding-top: 6vh;
+    height: 100%;
+  }
+
+  .no-account-container {
+    z-index: 1;
+  }
+
+  .profiles {
+    padding: 5px;
+  }
+
+  .profile-img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .no-picture-outer {
+    width: 15vw;
+    height: 15vw;
+  }
+
+}

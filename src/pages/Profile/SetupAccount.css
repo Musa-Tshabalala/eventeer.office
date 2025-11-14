@@ -1,0 +1,138 @@
+main form {
+  width: 100%;
+  padding: 1rem;
+}
+
+main button:hover {
+  border: 1px solid white;
+}
+
+.bus-form-t-cont {
+  flex-direction: row;
+}
+
+.download-pdf {
+  align-self: center;
+  background: none;
+  opacity: 0.7;
+}
+
+.download-pdf:hover {
+  color: white;
+  opacity: 1;
+}
+
+.b-types-cont {
+  flex-direction: row;
+  gap: 5px;
+  border: 3px solid white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.b-types-cont  button {
+  background-color: rgb(120, 120, 120);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+}
+
+.bus-types.selected {
+  background-color: white;
+  transform: translateY(-5px);
+}
+
+.bus-form-t-cont button {
+  background-color: rgb(120, 120, 120);
+  transform-origin: center;
+  transform: scale(0.8);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.bus-form.selected {
+  background-color: white;
+  transform: scale(1);
+}
+
+.bus-details-cont {
+  border: 3px solid white;
+  border-radius: 15px;
+  align-items: center;
+  padding: 15px;
+}
+
+.bus-details-cont select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.bus-details-cont label {
+  align-self: flex-start;
+}
+
+.bus-form-det-cont {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.out-file-cont {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  gap: 8px;
+  padding: 10px;
+}
+
+.out-file-cont h4 {
+  font-weight: bold;
+}
+
+.out-file-cont > label {
+  color: white;
+}
+
+.file-cont {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-cont > label {
+  text-shadow: none;
+}
+
+.file-cont .rem-file {
+  background-color: rgb(255, 60, 60);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.rem-file.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tandc-container {
+  flex-direction: row;
+  gap: 10px
+}
+
+.tandc-container a {
+  background: none;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.tandc-container a:hover {
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+}
+
+.rem-file:hover { background-color: rgb(255, 0, 0); }

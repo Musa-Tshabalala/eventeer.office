@@ -6,6 +6,7 @@ import Login from './pages/Login/Login.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header';
 import LoginOrSign from './components/LoginOrSign';
+import Profile from './pages/Profile/Profile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeaderWrapper = () => {
@@ -33,8 +34,9 @@ function App() {
       <HeaderWrapper />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Sign_Up" element={<SignUp />} />
+        <Route path="/sign_up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/profile/:id/*" element={<Profile />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -10,6 +10,11 @@
   )
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   text-shadow: 
     -2px -2px 0 black,
@@ -26,9 +31,9 @@ div {
 
 a {
     color: white;
+    font-weight: bold;
     background-color: rgb(120, 255, 120);
     border-radius: 10px;
-    padding: 5px;
     text-shadow: 
     -1px -1px 0 black,
     1px -1px 0 black,
@@ -40,13 +45,20 @@ a {
   transition: 0.5s ease-in-out;
 }
 
+.row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
 input {
   border-radius: 10px;
   height: 1vh;
   padding: 10px;
-  font-weight: bold;
+  font-weight: bolder;
   border: 2px solid black;
-  outline: none;
+  width: 80%;
 }
 
 label {

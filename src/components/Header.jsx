@@ -4,7 +4,7 @@ import logo from 'src/assets/logo.png';
 
 const Company = () => {
   return (
-    <div id="com-container">
+    <div className="com-container">
       <img src={logo} id="logo" alt="logo" />
       <TextType
         text={['e.vee', 'eventeer']}

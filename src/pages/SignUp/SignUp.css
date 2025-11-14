@@ -1,4 +1,4 @@
-.input-container {
+form .input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +12,32 @@
     width: 100vw;
 }
 
-.input-container > input {
+form {
+  gap: 15px
+}
+
+.sign-in-choice {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+form .input-container > input {
   width: 500px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 60%;
+}
+
+.or {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 .user {
@@ -49,8 +73,11 @@ h1 {
 }
 
 @media (max-width: 425px)  {
-  .input-container input {
+  form .input-container input {
     width: 95%;
   }
-}
 
+  .sign-in-choice {
+    width: 100%;
+  }
+}

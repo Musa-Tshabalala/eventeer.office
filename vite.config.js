@@ -12,7 +12,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/auth': 'http://localhost:3000',
-      '/api': 'http://localhost:3000',
+      '/api/me': 'http://localhost:3000',
+      '/get_login': 'http://localhost:3000',
+      '/update_info': 'http://localhost:3000',
+      '/setup_account': 'http://localhost:3000',
     },
     watch: {
       usePolling: true,
